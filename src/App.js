@@ -6,7 +6,10 @@ import OtroCounter from './components/OtroCounter';
 
 import counter from './reducers/counter';
 
-const store = createStore(counter);
+const store = createStore(
+  counter,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 class App extends Component {
   render() {
     return (
