@@ -1,16 +1,16 @@
 const initialState = {
-  value: 0
+  value: 0,
 };
 
 export const counter = (state = initialState, action) => {
   switch (action.type) {
-    case 'INCREMENT':
+    case "INCREMENT":
       return {
-        value: state.value + 1
+        value: state.value + 1,
       };
-    case 'DECREMENT':
+    case "DECREMENT":
       return {
-        value: state.value - 1
+        value: state.value - 1,
       };
     default:
       return state;
